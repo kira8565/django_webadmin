@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'mainform',
     'menumanage',
     'common',
+    'mptt',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -139,3 +140,4 @@ STATICFILES_FINDERS = (
 )
 
 LIST_PAGE_SIZE = 50
+LOGIN_URL = "/login/"
