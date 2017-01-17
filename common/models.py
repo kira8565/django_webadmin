@@ -18,11 +18,13 @@ class BaseModel(models.Model):
     )
     created_at = models.DateTimeField(
         verbose_name=u"数据创建时间",
-        default=timezone.now
+        default=timezone.now,
+        **DICT_NULL_BLANK_TRUE
     )
     updated_at = models.DateTimeField(
         verbose_name=u"数据更新时间",
-        default=timezone.now
+        default=timezone.now,
+        **DICT_NULL_BLANK_TRUE
     )
     deleted_at = models.DateTimeField(
         verbose_name=u"数据删除时间",
